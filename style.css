@@ -123,7 +123,7 @@ video {
 @media screen and (max-width: 725px) { /* Para deixar o código responsivo*/
 
     .imagem-carrossel {
-        height: 50px;
+        height: 55px;
     }
 
     p{
@@ -143,32 +143,50 @@ video {
     }
 
     .titulo-carrossel{
-        font-size: 24px;
-        
+        font-size: 24px;  
     }
 
     .link-assistir{
         background-color: white;
         padding: 2px 14px;
         border-radius: 4px;
-        margin-top: 20px;
+        margin-top: 20px;   
     }
-    .link-info{
-        padding: 2px 14px;
+
+    .link-info {
+        padding: 2px 30px;
         border-radius: 4px;
         margin-top: 20px;
-        
-        
+        background-color: rgba(255, 255, 255, 0.35);
+        align-items: flex-end;        
     }
 
     .capa{
-      bottom: 43%;
-      text-align: left;
+      bottom: 50%;
+      display: flex;
+      font-size: 12px;
+      width: auto;
     }
     
     .capa-descricao{
         bottom:43%;
         text-align: right;
-        
+    }
+
+    .carousel-control-next{
+        position: absolute;
+        top: 34px;
+    }
+
+    .carousel-control-prev{
+        top: 34px;
+        position: absolute;
+        left: -61px;
+    }
+
+    .carousel{
+        left: 3px;
+    }
+
     }
 }
