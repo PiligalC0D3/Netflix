@@ -119,3 +119,56 @@ video {
     Classe = .
     ID = #
 */
+
+@media screen and (max-width: 725px) { /* Para deixar o código responsivo*/
+
+    .imagem-carrossel {
+        height: 50px;
+    }
+
+    p{
+        display: none;
+    }
+
+    h1{
+        display: none;
+    }
+
+    .botao-som {
+        display: none;
+    }
+
+    video {
+        margin-top: -190px;
+    }
+
+    .titulo-carrossel{
+        font-size: 24px;
+        
+    }
+
+    .link-assistir{
+        background-color: white;
+        padding: 2px 14px;
+        border-radius: 4px;
+        margin-top: 20px;
+    }
+    .link-info{
+        padding: 2px 14px;
+        border-radius: 4px;
+        margin-top: 20px;
+        
+        
+    }
+
+    .capa{
+      bottom: 43%;
+      text-align: left;
+    }
+    
+    .capa-descricao{
+        bottom:43%;
+        text-align: right;
+        
+    }
+}
