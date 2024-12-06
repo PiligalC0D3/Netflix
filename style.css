@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: Border-box;
-    } 
-
 body {
     background-color: #000;
     margin: 0;
@@ -26,11 +20,11 @@ ul {
 }
 
 .img-topo {
-    height: 40px;  /* Altura */
+    height: 25px;  /* Altura */
 }
 
 video {
-    width: 99vw; /* Largura */
+    width: 100vw; /* Largura */
     min-height: 80vh; /* Altura */
 }
 
@@ -40,9 +34,11 @@ video {
     left: 5%;
     width: 35%;
     z-index: 3;
+    
 }
 
 .capa-titulo {
+    display: flex;
     color: white;
     font-size: 80px;  /* Tamanho da fonte */
     margin-bottom: 5px;
@@ -50,6 +46,7 @@ video {
 }
 
 .capa-descricao {
+   
     color: white;
     font-size: 20px;
     margin-bottom: 20px;
@@ -72,13 +69,14 @@ video {
 }
 
 .imagem-carrossel {
-    height: 113px;
+
+    height: 150px;
 }
 
 #carouselExampleControls {
     background-color: transparent;
     position: absolute;
-    bottom: 39px;
+    bottom: 10px;
     left: 50px;
 }
 
@@ -96,11 +94,10 @@ video {
     position: absolute;
     top: 100px;
     right: 20px;
-
 }
 
 .modal {
-    display: none;  /* Mostrar NADA */
+    display: none; /* Mostrar NADA */
     position: fixed;
     z-index: 5;
     left: 0;
@@ -111,86 +108,37 @@ video {
 }
 
 .modal-conteudo {
+    
     background-color: #181818;
-    margin: 27px auto; 
-    padding: 40px;
-    width: 50%;
+    margin: 30px auto; 
+    padding: 20px;
+    width: 60%;
     color: white;
 }
 /* 
     Classe = .
     ID = #
 */
-/* 
-    Classe = .
-    ID = #
-*/
-@media screen and (max-width: 1003px) { /* Para deixar o código responsivo*/
 
-    .imagem-carrossel {
-        height: 55px;
-    }
-
-    p{
-        display: none;
-    }
-
-    h1{
-        display: none;
-    }
-
-    .botao-som {
-        display: none;
-    }
-
-    video {
-        margin-top: -190px;
-    }
-
-    .titulo-carrossel{
-        font-size: 24px;  
-    }
-
-    .link-assistir{
-        background-color: white;
-        padding: 2px 14px;
-        border-radius: 4px;
-        margin-top: 20px;   
-    }
-
-    .link-info {
-        padding: 2px 30px;
-        border-radius: 4px;
-        margin-top: 20px;
-        background-color: rgba(255, 255, 255, 0.35);
-        align-items: flex-end;        
-    }
-
-    .capa{
-      bottom: 50%;
-      display: flex;
-      font-size: 12px;
-      width: auto;
+/* Dispositivos móveis (até 768px) */
+@media (max-width: 768px) {
+    body {
+    font-size: 14px;
     }
     
-    .capa-descricao{
-        bottom:43%;
-        text-align: right;
-    }
 
-    .carousel-control-next{
-        position: absolute;
-        top: 34px;
+   }
+   
+   /* Tablets (entre 769px e 1024px) */
+   @media (min-width: 769px) and (max-width: 1024px) {
+    body {
+    font-size: 16px;
     }
-
-    .carousel-control-prev{
-        top: 34px;
-        position: absolute;
-        left: -61px;
+   }
+   
+   /* Computadores (acima de 1024px) */
+   @media (min-width: 1025px) {
+    body {
+    font-size: 18px;
     }
-
-    .carousel{
-        left: 3px;
-    }
-
-    }
+   }
