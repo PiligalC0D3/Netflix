@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: Border-box;
+    } 
+
 body {
     background-color: #000;
     margin: 0;
@@ -119,8 +125,7 @@ video {
     Classe = .
     ID = #
 */
-
-@media screen and (max-width: 725px) { /* Para deixar o código responsivo*/
+@media screen and (max-width: 1003px) { /* Para deixar o código responsivo*/
 
     .imagem-carrossel {
         height: 55px;
@@ -189,4 +194,3 @@ video {
     }
 
     }
-}
