@@ -78,8 +78,8 @@ video {
 .imagem-carrossel {
     
    /*/ height: 150px; */
-    width: 15vw; /* Largura */
-    min-height: 6vh; /* Altura */
+    width: 14.5vw; /* Largura */
+    min-height: 10vh; /* Altura */
    
 }
 
@@ -91,12 +91,12 @@ video {
     
 }
 
-.titulo-carrossel {
+.titulo-carrossel {     /*Principais Filmes e Séries */
     display: flex;
     color: white;
     font-size: 30px;   
     margin-bottom: 10px;
-    
+}
 
 .botao-som {
     border: none;
@@ -105,7 +105,8 @@ video {
     z-index: 4;
     position: absolute;
     top: 100px;
-    right: 20px;
+    right: 44px;
+    
 }
 
 .modal {
@@ -117,6 +118,8 @@ video {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    scroll-snap-type: x mandatory;
+
     
 }
 
@@ -151,6 +154,7 @@ video {
     scroll-snap-type: x mandatory;
     
     
+    
 }
 
 /* 
@@ -168,7 +172,7 @@ video {
 
     .carousel-inner {
         width: 40vh;
-        object-fit: scale-down;
+        object-fit: scale-down; /* define como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas*/
     }
 }
 
@@ -176,20 +180,107 @@ video {
    /* Tablets (entre 769px e 1024px) */
    @media (min-width: 839px) and (max-width: 1024px) {
         .carousel-item {
-            
-            width: 29vw; /* Largura */
+            width: 94vw; /* Largura */
             min-height: 10vh;
             object-fit: scale-down;
             }
-    
-        .carousel-inner {            
+
+        .carousel-inner {    
+            width: 94vw; /* Largura */
+            min-height: 10vh;
             object-fit: scale-down;
         }
     }
-}
+
    
    /* Computadores (acima de 1024px) */
    @media (min-width: 1025px) {
-  
+  .carpisel-item {
+    scroll-snap-type: x mandatory;
+    width: 29vw;
+    min-height: 10vh;
+    object-fit: scale-down;
 
     }
+
+    .carousel-inner {
+        scroll-snap-type: x mandatory;
+        object-fit: scale-down;
+    }
+   }
+
+   @media (min-width: 626px){  /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+        .carousel-item {
+            scroll-snap-type: x mandatory;
+            width: 100%;
+            object-fit: scale-down;
+            
+        }
+
+        .imagem-carrossel{
+            object-fit: scale-down;
+
+        }
+
+        .link-info{
+            font-size: small;
+            border-radius: 4px;
+            object-fit: scale-down;
+        }
+
+       
+        }
+
+        @media screen and (max-width: 414px) {
+
+            .video {
+            margin-top: -17vh;
+            display: flex;
+        }
+        
+        .capa-titulo {
+            object-fit: scale-down;
+            font-size: revert-layer;
+            display: flex;
+        }
+
+        .capa-descricao{
+            margin: 1px -221px 32px -11px;
+        }
+
+        .carousel-item{
+            width: 70%;
+            object-fit: scale-down;
+            margin: 10px 
+        }
+
+        .imagem-carrossel{
+            max-width: 100%;
+            min-height: 7vh;
+
+        }
+
+        .carousel-slide{
+            margin-left: -32px;
+
+        } 
+
+        .titulo-carrossel{  /*Principais Filmes e Séries */
+            display: flex;
+            font-size: 120%;
+        }
+
+        .carousel-inner{
+            width: 94%;
+            position: static;
+            display: flexbox;
+            position: relative;
+            display: -webkit-box;
+            
+        }
+        body{
+            padding-top: 26px;
+        }
+    }
+    
+    
