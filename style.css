@@ -246,6 +246,7 @@ video {
 
         .capa-descricao{
             margin: 1px -221px 32px -11px;
+            font-size: 70%;
         }
 
         .carousel-item{
@@ -256,31 +257,57 @@ video {
 
         .imagem-carrossel{
             max-width: 100%;
-            min-height: 7vh;
+            min-height: 0vh;
+            width: 31%;
 
         }
 
         .carousel-slide{
-            margin-left: -32px;
+            margin-left: 2%;
+            width:112%;
 
         } 
 
         .titulo-carrossel{  /*Principais Filmes e Séries */
             display: flex;
-            font-size: 120%;
+            font-size: 90%;
         }
 
         .carousel-inner{
-            width: 94%;
+            width: 125%;
             position: static;
             display: flexbox;
             position: relative;
             display: -webkit-box;
+            left: -4%;
             
         }
         body{
             padding-top: 26px;
         }
+
+        .link-assistir{     /*BOTÃO ASSISTIR */
+            text-size-adjust: 60%;
+        }
+        .link-info{     /*BOTÃO MAIS INFORMAÇÕES*/
+            text-size-adjust: 57%;
+        }
+
+        .capa{
+            bottom: 30%;
+        }
+        .carousel-control-prev{
+            left: -50px;
+            top: 16%;
+
+        }
+        .carousel-control-next {
+         top: 16%;
+         
+        }
     }
     
+    @media (min-width: 417px) and (max-width: 600px) {
+
+    }
     
