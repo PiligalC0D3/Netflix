@@ -236,6 +236,7 @@ video {
             .video {
             margin-top: -17vh;
             display: flex;
+            width: 118%;
         }
         
         .capa-titulo {
@@ -271,15 +272,18 @@ video {
         .titulo-carrossel{  /*Principais Filmes e Séries */
             display: flex;
             font-size: 90%;
+            margin-left: inherit;
+            margin: -50px;
         }
 
         .carousel-inner{
-            width: 125%;
-            position: static;
+            width: 199%;
+            
             display: flexbox;
             position: relative;
             display: -webkit-box;
-            left: -4%;
+            top: 59px;
+            left: -17%;
             
         }
         body{
@@ -303,7 +307,7 @@ video {
         }
         .carousel-control-next {
          top: 16%;
-         
+
         }
     }
     
