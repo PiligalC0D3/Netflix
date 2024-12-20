@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     background-color: #000;
     margin: 0;
@@ -231,93 +238,11 @@ video {
        
         }
 
-        @media screen and (max-width: 414px) {
+        @media screen and (min-width: 375px) and (max-widt: 600px) {
 
-            .video {
-            margin-top: -17vh;
-            display: flex;
-            width: 100%;
-        }
-        
-        .capa-titulo {
-            object-fit: scale-down;
-            font-size: revert-layer;
-            display: flex;
-        }
-
-        .capa-descricao{
-            margin: 1px -221px 32px -11px;
-            font-size: 70%;
-        }
-
-        .carousel-item{
-            width: 70%;
-            object-fit: scale-down;
-            margin: 8px 
-        }
-
-        .imagem-carrossel{
-            max-width: 100%;
-            min-height: 0vh;
-            width: 31%;
-
-        }
-
-        .carousel-slide{
-            margin-left: 2%;
-            width:112%;
-
-        } 
-
-        .titulo-carrossel{  /*Principais Filmes e Séries */
-            display: flex;
-            font-size: 90%;
-            margin-left: inherit;
-            margin: -50px;
-        }
-
-        .carousel-inner{
-            width: 199%;
+            .capa {
+                position: fixed;
             
-            display: flexbox;
-            position: relative;
-            display: -webkit-box;
-            top: 59px;
-            left: -17%;
-            
-        }
-        body{
-            padding-top: 26px;
-        }
-
-        .link-assistir{     /*BOTÃO ASSISTIR */
-            text-size-adjust: 60%;
-        }
-        .link-info{     /*BOTÃO MAIS INFORMAÇÕES*/
-            text-size-adjust: 57%;
-        }
-
-        .capa{
-            bottom: 30%;
-        }
-        .carousel-control-prev{
-            left: -50px;
-            top: 16%;
+            }
 
         }
-        .carousel-control-next {
-         top: 16%;
-
-        }
-
-        .botao-som{
-            top:60px;
-            right: 15px;
-            border-radius: 15px;
-        }
-    }
-    
-    @media (min-width: 417px) and (max-width: 600px) {
-
-    }
-    
