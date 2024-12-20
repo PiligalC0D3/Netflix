@@ -236,7 +236,7 @@ video {
             .video {
             margin-top: -17vh;
             display: flex;
-            width: 118%;
+            width: 100%;
         }
         
         .capa-titulo {
@@ -253,7 +253,7 @@ video {
         .carousel-item{
             width: 70%;
             object-fit: scale-down;
-            margin: 10px 
+            margin: 8px 
         }
 
         .imagem-carrossel{
@@ -308,6 +308,12 @@ video {
         .carousel-control-next {
          top: 16%;
 
+        }
+
+        .botao-som{
+            top:60px;
+            right: 15px;
+            border-radius: 15px;
         }
     }
     
