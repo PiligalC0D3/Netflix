@@ -238,11 +238,37 @@ video {
        
         }
 
-        @media screen and (min-width: 375px) and (max-widt: 600px) {
+        @media screen and (min-width: 375px) /*and (max-widt: 600px)*/ {
 
             .capa {
                 position: fixed;
+                z-index: 1;
+                width: 90%;
+                left: 3%;
+                background-color: blue;
             
             }
+            .img-topo {  /*IMAGEM NOME NETFLIX */
+                margin-left: 15px; 
+            }
+
+            .capa-titulo{    /* TÍTULO DA SERIE STRANGER THINGS */
+                font-size: x-large;
+            }
+            .capa-descricao {  /*DESRIÇÃO DA SERIE STRANGER THINGS */
+                margin: -9px -277px 36px -136px;
+                margin-left: -11%;
+            }
+            
+            .imagem-carrossel{    /* IMAGENS DAS SERIES */
+                width: 28.5vw;
+                min-height: 10vh;
+            }
+
+            .carousel-inner{
+
+            }
+
+
 
         }
