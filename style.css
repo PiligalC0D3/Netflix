@@ -107,7 +107,7 @@ video {
 
 .botao-som {
     border: none;
-    border-radius: 5px;
+    border-radius: 11px;
     cursor: pointer;
     z-index: 4;
     position: absolute;
@@ -235,40 +235,25 @@ video {
             object-fit: scale-down;
         }
 
+        @media(max-width: 666px) {
+            
+            .carousel-inner{    /*todo o carrosel */
+                width: 86%;
+                object-fit: scale-down;
+            }
+
+            .capa-titulo{
+                font-size: px;
+            }
+
+            .capa-descricao{
+
+                margin: 0px -220´x 87px 0px;
+                font-size: small;
+            }
+
+        }
+
+
        
-        }
-
-        @media screen and (min-width: 375px) /*and (max-widt: 600px)*/ {
-
-            .capa {
-                position: fixed;
-                z-index: 1;
-                width: 90%;
-                left: 3%;
-                background-color: blue;
-            
-            }
-            .img-topo {  /*IMAGEM NOME NETFLIX */
-                margin-left: 15px; 
-            }
-
-            .capa-titulo{    /* TÍTULO DA SERIE STRANGER THINGS */
-                font-size: x-large;
-            }
-            .capa-descricao {  /*DESRIÇÃO DA SERIE STRANGER THINGS */
-                margin: -9px -277px 36px -136px;
-                margin-left: -11%;
-            }
-            
-            .imagem-carrossel{    /* IMAGENS DAS SERIES */
-                width: 28.5vw;
-                min-height: 10vh;
-            }
-
-            .carousel-inner{
-
-            }
-
-
-
-        }
+    }
