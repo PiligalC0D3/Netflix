@@ -147,9 +147,7 @@ video {
     grid-template-rows: 130px;
     scroll-behavior: smooth;
     overflow: auto;
-    scroll-snap-type: x mandatory;
-    
-    
+    scroll-snap-type: x mandatory;   
 }
 
 .carousel-item {
@@ -160,8 +158,6 @@ video {
     overflow: auto;
     scroll-snap-type: x mandatory;
     
-    
-    
 }
 
 /* 
@@ -170,9 +166,9 @@ video {
 */
 
 /* Dispositivos móveis (até 768px) */
-@media (max-width: 600px) {
+@media (max-width: 600px) {  /*ISSO É O CELULAR*/
         .carousel-item {
-    width: 40%;
+    width: 65%;
     object-fit: scale-down;
 
     }
@@ -180,6 +176,42 @@ video {
     .carousel-inner {
         width: 40vh;
         object-fit: scale-down; /* define como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas*/
+    }
+    .imagem-carrossel{
+        min-width: 8vh;
+        width: 22.5vw;
+    }
+
+    .capa-descricao{
+        font-size: 70%;
+        margin: 0px -210px 75px -5px;
+        display: flex;
+    }
+    .capa-titulo{
+        display: flex;
+        font-size: 150%;
+        margin-bottom: -136px;
+    }
+
+    .titulo-carrossel{
+        display: flex;
+        font-size: 15px;
+    }
+
+    video{
+        width: 100vw;
+        min-height: 43vh;
+        margin: 35px -60px 162px -2px;
+    }
+    .img-topo{
+        height: 37px;
+        margin-left: 20px;
+    }
+    .botao-som{
+        top: 80px;
+    }
+    .capa{
+        width: -1%;
     }
 }
 
@@ -254,6 +286,17 @@ video {
 
         }
 
+       /* @media (min-width: 375px) and (max-width: 667px) {
+            
+            .carousel-item {
 
-       
-    }
+            width: 86%;
+            object-fit: scale-down;
+            flex-grow: 1;
+            }
+
+        }
+
+        
+        
+*/
