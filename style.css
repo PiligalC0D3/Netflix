@@ -184,18 +184,22 @@ video {
 
     .capa-descricao{
         font-size: 70%;
-        margin: 0px -210px 75px -5px;
+        margin: -21px -214px 95px -2px;
         display: flex;
+        background-color: red;
     }
     .capa-titulo{
         display: flex;
         font-size: 150%;
-        margin-bottom: -136px;
+        margin-bottom: 245px;
+        background-color: rebeccapurple;
+        margin: 37px 0px 200px 0px;
     }
 
     .titulo-carrossel{
         display: flex;
         font-size: 15px;
+        background-color: blue;
     }
 
     video{
@@ -212,6 +216,26 @@ video {
     }
     .capa{
         width: -1%;
+        display: inline-flex;
+    }
+    .link-info{
+        padding: 0px 0px;
+        border-radius: 12px;
+        outline: none;
+        border: 0px;
+        font-size: 14px;
+        min-width: 130px;
+        display: flex;
+        margin: 121px 0px 165px 0px;
+    }
+    .link-assistir{
+        padding: 0px 0px;
+        border-radius: 12px;
+        outline: none;
+        border: 0px;
+        font-size: 14px;
+        min-width: 55px;
+        margin: 121px 6px 167px -3px;
     }
 }
 
@@ -296,7 +320,3 @@ video {
             }
 
         }
-
-        
-        
-*/
