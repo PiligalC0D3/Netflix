@@ -168,38 +168,43 @@ video {
 /* Dispositivos móveis (até 768px) */
 @media (max-width: 600px) {  /*ISSO É O CELULAR*/
         .carousel-item {
-    width: 65%;
+    width: 103%;
     object-fit: scale-down;
+    padding: 22px;
+    margin: -37px 0px -26px 13px;
 
     }
 
     .carousel-inner {
-        width: 40vh;
+        width: 48vh;
+        right: 11vw;
+        top: 37px;
+        display: table-footer-group;
         object-fit: scale-down; /* define como o conteúdo de um elemento substituído deve ser ajustado à caixa estabelecida pela altura e largura usadas*/
     }
     .imagem-carrossel{
-        min-width: 8vh;
-        width: 22.5vw;
+        min-width: 19vh;
+        width: 35.5vw;
+        margin-top: 1px;
     }
 
     .capa-descricao{
         font-size: 70%;
-        margin: -21px -214px 95px -2px;
+        margin: 142px -344px 94px -110px;
         display: flex;
-        background-color: red;
+    
     }
     .capa-titulo{
         display: flex;
         font-size: 150%;
         margin-bottom: 245px;
-        background-color: rebeccapurple;
         margin: 37px 0px 200px 0px;
     }
 
     .titulo-carrossel{
         display: flex;
         font-size: 15px;
-        background-color: blue;
+        margin-bottom: -24px;
     }
 
     video{
@@ -226,7 +231,7 @@ video {
         font-size: 14px;
         min-width: 130px;
         display: flex;
-        margin: 121px 0px 165px 0px;
+        margin: 121px -54px 165px 0px;
     }
     .link-assistir{
         padding: 0px 0px;
@@ -236,6 +241,9 @@ video {
         font-size: 14px;
         min-width: 55px;
         margin: 121px 6px 167px -3px;
+    }
+    .carosousel-control-prev {
+        left: -55px;
     }
 }
 
@@ -308,15 +316,4 @@ video {
                 font-size: small;
             }
 
-        }
-
-       /* @media (min-width: 375px) and (max-width: 667px) {
-            
-            .carousel-item {
-
-            width: 86%;
-            object-fit: scale-down;
-            flex-grow: 1;
-            }
-
-        }
+        }}
