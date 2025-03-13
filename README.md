@@ -8,3 +8,5 @@
 ✅ Funcionalidades interativas com JavaScript<br>
 ✅ Design responsivo para diversos dispositivos<br>
 Essa experiência despertou meu interesse pela área de Desenvolvimento Web, me motivando a aprofundar meus estudos e a seguir uma nova jornada profissional. 🚀</p>
+
+<img src="readme1.PNG">
